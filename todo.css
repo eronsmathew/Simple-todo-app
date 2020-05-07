@@ -1,0 +1,129 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+html{
+    height:100%;
+    background-image:linear-gradient(#5518c5e3,#444eda);
+    background-repeat:no-repeat;
+    font-family:cursive;
+    color:#0f222d;
+    background-size:auto;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:auto;
+    width:600px;
+    
+}
+
+.header-class{
+    border:0;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width:600px;
+    margin-top:30px;
+    background-color:#0f222d;
+}
+
+.header-span{
+    color:#e42760;
+}
+
+h1{
+    text-align:center;
+    color:#fff;
+}
+
+.todo-container{
+    padding:3%;
+    width:600px;
+    height:auto;
+    display:inline-block;
+    box-shadow:0px 5px 25px black;
+    margin-top:15px;
+    border:0px;
+    border-radius:10px;
+    margin-bottom:3%;
+
+}
+
+input{
+    text-align:center;
+    padding:1.5%;
+    border:0;
+}
+
+input[type="text"]{
+    width:70%;
+    margin-left:5%;
+    border-radius:6px;
+    border:0;
+}
+
+input[type="button"]{
+    border:0;
+    border-radius:4px;
+    padding:1.5% 3%;
+    text-transform:uppercase;
+    font-weight:bolder;
+}
+
+input[type="button"]:hover{
+    cursor:pointer;
+    background:#e42760;
+    transition:1s ease-out;
+    color:#fff;
+}
+
+ul{
+    text-align:left;
+    padding-left:10%;
+    font-size:1.5rem;
+    list-style:circle;
+    padding:7%;
+    color:#330614;
+}
+
+li:hover{
+    color:white;
+    margin:4%;
+    cursor:pointer;
+    transition:1.5s ease;
+}
+
+@media(max-width: 500px){
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        margin: auto;
+        width:100%;
+    }
+
+    .header-class{
+        border:0;
+        border-radius:2px;
+        width:100%;
+        margin-top:30px;
+        background-color:#0f222d;
+    }
+
+    
+    .todo-container{
+        padding:2%;
+        width:100%;
+        height:auto;
+        display:inline-block;
+        box-shadow:0px 5px 25px black;
+        margin-top:15px;
+        border:0px;
+        border-radius:4px;
+        margin-bottom:3%;
+    }
+
+}
